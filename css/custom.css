@@ -1,0 +1,54 @@
+/* 页脚与头图透明 */
+#footer {
+  background: transparent !important;
+}
+#page-header {
+  background: transparent !important;
+}
+
+/* 白天模式遮罩透明 */
+#footer::before {
+  background: transparent !important;
+}
+#page-header::before {
+  background: transparent !important;
+}
+
+/* 夜间模式遮罩透明 */
+[data-theme="dark"] #footer::before {
+  background: transparent !important;
+}
+[data-theme="dark"] #page-header::before {
+  background: transparent !important;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(102,205,170, 0.4);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(＃66CDAA);
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(102,205,170, 0.4) 100%,
+    transparent 75%,
+    transparent
+  );
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: var(＃66CDAA);
+}
